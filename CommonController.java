@@ -1,0 +1,22 @@
+package com.incapp.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
+@Controller
+public class CommonController {
+
+	@ModelAttribute
+	public void commomValues(ModelMap m) {
+		m.addAttribute("appName","Book App");
+	}
+	
+	@GetMapping("/")
+	public String home() {
+		return "index.jsp";
+	}
+	
+}
