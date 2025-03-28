@@ -63,15 +63,8 @@
             <input type="text" id="bookName" name="name" maxlength="30" class="form-control text-center mb-2" placeholder="E.g., Harry Potter" required>
             <button type="submit" class="btn btn-custom">Search Book</button>
         </form>
-        <p>
-            Books transport us to new worlds, broaden our perspectives, and inspire creativity. Whether you're searching for classic literature, modern bestsellers, or academic resources, our library has it all. 
-            Discover insightful books that spark curiosity and expand knowledge.
-        </p>
-        <p>
-            Reading enhances our understanding of different cultures, ideas, and experiences. Whether you prefer fiction, history, or self-help books, the right book is waiting for you. Start your journey today!
-        </p>
         <div class="admin-login mt-3">
-            <p>Are you an admin? <a href="login">Login here</a></p>
+            <p>Are you an User? <a href="login">Login here</a></p>
         </div>
     </div>
 
