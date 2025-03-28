@@ -84,7 +84,7 @@
 			</div>
     	</c:if>
 	    
-        <h2 class="mb-4">Admin Login</h2>
+        <h2 class="mb-4">User Login</h2>
         <hr class="border border-light">
 		
         <form action="adminLogin" method="post" class="mt-4">
@@ -99,7 +99,7 @@
 
         <div class="back-home mt-3">
             <p>
-                <a href="index.jsp">Back to Home</a>
+                <a href="/">Back to Home</a>
                 <a href="" data-bs-toggle="modal" data-bs-target="#forgetPasswordModal">Forget Password</a>
                 <a href="Registration.jsp">Registration</a>
                 <!-- Modal -->
