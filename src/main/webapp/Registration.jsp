@@ -92,10 +92,10 @@
                 <input type="text" id="adminname" name="name" maxlength="30" class="form-control" placeholder="Enter your name" required>
             </div>
             <div class="mb-3">
-                <input type="text" id="adminUsername" name="id" maxlength="30" class="form-control" placeholder="Enter admin id" required>
+                <input type="text" id="adminUsername" name="id" maxlength="30" class="form-control" placeholder="Enter your mail" required>
             </div>
             <div class="mb-3">
-               	<input type="password" id="adminPassword" name="password" maxlength="30" class="form-control" placeholder="Enter admin password" required>
+               	<input type="password" id="adminPassword" name="password" maxlength="30" class="form-control" placeholder="Enter password" required>
             </div>
             <button type="submit" class="btn btn-custom w-100 py-2">Registered</button>
         </form>
