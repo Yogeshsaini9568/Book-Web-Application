@@ -89,10 +89,10 @@
 		
         <form action="adminLogin" method="post" class="mt-4">
             <div class="mb-3">
-                <input type="text" id="adminUsername" name="id" maxlength="30" class="form-control" placeholder="Enter admin id" required>
+                <input type="email" id="adminUsername" name="id" maxlength="30" class="form-control" placeholder="Enter user id" required>
             </div>
             <div class="mb-3">
-               	<input type="password" id="adminPassword" name="password" maxlength="30" class="form-control" placeholder="Enter admin password" required>
+               	<input type="password" id="adminPassword" name="password" maxlength="30" class="form-control" placeholder="Enter user password" required>
             </div>
             <button type="submit" class="btn btn-custom w-100 py-2">Login</button>
         </form>
