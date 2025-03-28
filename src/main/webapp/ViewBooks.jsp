@@ -13,8 +13,9 @@
     <!-- Custom Styles -->
     <style>
         body {
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #fff;
             font-family: 'Arial', sans-serif;
-            background-color: #f4f7f6;
         }
         .container {
             max-width: 900px;
