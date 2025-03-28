@@ -92,7 +92,7 @@
                 <input type="text" id="adminname" name="name" maxlength="30" class="form-control" placeholder="Enter your name" required>
             </div>
             <div class="mb-3">
-                <input type="text" id="adminUsername" name="id" maxlength="30" class="form-control" placeholder="Enter your mail" required>
+                <input type="email" id="adminUsername" name="id" maxlength="30" class="form-control" placeholder="Enter your mail" required>
             </div>
             <div class="mb-3">
                	<input type="password" id="adminPassword" name="password" maxlength="30" class="form-control" placeholder="Enter password" required>
