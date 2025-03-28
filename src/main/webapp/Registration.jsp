@@ -6,7 +6,7 @@
 <head>
     <meta charset="ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Registration</title>
+    <title>User Registration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -84,7 +84,7 @@
 			</div>
     	</c:if>
 	    
-        <h2 class="mb-4">Admin Registration</h2>
+        <h2 class="mb-4">User Registration</h2>
         <hr class="border border-light">
 		
         <form action="adminRegistration" method="post" class="mt-4">
@@ -102,7 +102,7 @@
 
         <div class="back-home mt-3">
             <p>
-                <a href="index.jsp">Back to home</a><br>
+                <a href="/">Back to home</a><br>
                 <a href="AdminLogin.jsp">Already have an account?</a>
             </p>
         </div>
