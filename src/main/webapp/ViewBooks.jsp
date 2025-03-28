@@ -14,20 +14,18 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #2c3e50, #4ca1af);
-            color: #fff;
+            background-color: #f4f7f6;
         }
         .container {
             max-width: 900px;
             margin-top: 50px;
         }
         .book-card {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: #ffffff;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
-            color: #333;
         }
         .book-card h5 {
             color: #333;
@@ -50,13 +48,6 @@
             width: 50%;
             margin: 20px auto;
         }
-        a {
-            color: #f8f9fa;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #f39c12;
-        }
     </style>
 </head>
 <body>
@@ -68,7 +59,8 @@
             <a href="/">Home</a>
         </div>
 
-       <div>
+        <!-- Books Section -->
+        <div>
             <h2>Books</h2>
             <div class="row m-2">
             	<c:forEach items="${books}" var="b">
@@ -94,6 +86,7 @@
             </c:forEach>
             </div>
         </div>
+    </div>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
