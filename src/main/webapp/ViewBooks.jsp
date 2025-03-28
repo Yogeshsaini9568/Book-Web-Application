@@ -70,8 +70,7 @@
 			    	<p>Price: <b>${b.price}</b> </p>
 			    	<p>Author Name: <b>${b.aname}</b> </p>
 			    	<p>Publisher Name: <b>${b.pname}</b> </p>
-		    </div>
-		<div class="col">
+			<div class="col">
 	    		<form action="viewBook" method="post" target="_blank">
 	    			<input type="hidden" name="name" value="${b.name}">
 	    			<button class="btn btn-success" type="submit">View Book</button>
@@ -83,6 +82,7 @@
 	    			<button class="btn btn-primary" type="submit">Download Book</button>
 	    		</form>
 	    	</div>
+		    </div>
             </c:forEach>
             </div>
         </div>
