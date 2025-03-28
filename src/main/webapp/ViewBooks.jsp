@@ -68,27 +68,18 @@
             <a href="/">Home</a>
         </div>
 
-       <c:if test="${msg != null}">
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Message:</strong> ${msg}
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-</c:if>
-<c:forEach items="${books}" var="b">
-<div class="container text-start">
-    <div class="row mb-3 ">
-    	<div class="col-4">
-    		<img alt="book image" src="/getBookImage?name=${b.name}" height="100px">
-    	</div>
-    	<div class="col-8">
-    		<p>Name: <b>${b.name}</b> </p>
-    		<p>Price: <b>${b.price}</b> </p>
-    		<p>Author Name: <b>${b.aname}</b> </p>
-    		<p>Publisher Name: <b>${b.pname}</b> </p>
-    	</div>
-    </div>
-    	<c:if test="${b.content!=null}">
-	    	<div class="col">
+       <div>
+            <h2>Books</h2>
+            <div class="row m-2">
+            	<c:forEach items="${books}" var="b">
+            	<div class="card m-3 " style="width:max-content;">
+			    	<img alt="book image" src="/getBookImage?name=${b.name}" height="100px" width="50%">
+			    <p>Name: <b>${b.name}</b> </p>
+			    	<p>Price: <b>${b.price}</b> </p>
+			    	<p>Author Name: <b>${b.aname}</b> </p>
+			    	<p>Publisher Name: <b>${b.pname}</b> </p>
+		    </div>
+		<div class="col">
 	    		<form action="viewBook" method="post" target="_blank">
 	    			<input type="hidden" name="name" value="${b.name}">
 	    			<button class="btn btn-success" type="submit">View Book</button>
@@ -100,10 +91,9 @@
 	    			<button class="btn btn-primary" type="submit">Download Book</button>
 	    		</form>
 	    	</div>
-    	</c:if>
-    </div>
-</div>
-</c:forEach>
+            </c:forEach>
+            </div>
+        </div>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
