@@ -56,19 +56,23 @@
         <div class="header">
             <h1 class="display-4">${appName}</h1>
             <hr>
+            <a href="/">Home</a>
         </div>
 
         <!-- Books Section -->
         <div>
             <h2>Books</h2>
-            <c:forEach items="${books}" var="b">
-            	<div class="book-card">
-	                <p>Name: ${b.name}</p>
-	                <p>Price: ${b.price}</p>
-	                <p>Author Name: ${b.aname}</p>
-	                <p>Publisher Name: ${b.pname}</p>
-	            </div>
+            <div class="row m-2">
+            	<c:forEach items="${books}" var="b">
+            	<div class="card m-3 " style="width:max-content;">
+			    	<img alt="book image" src="/getBookImage?name=${b.name}" height="100px" width="50%">
+			    <p>Name: <b>${b.name}</b> </p>
+			    	<p>Price: <b>${b.price}</b> </p>
+			    	<p>Author Name: <b>${b.aname}</b> </p>
+			    	<p>Publisher Name: <b>${b.pname}</b> </p>
+		    </div>
             </c:forEach>
+            </div>
         </div>
     </div>
 
